@@ -1,0 +1,67 @@
+{
+  "pages":[ 
+    "pages/index/index",
+    "pages/personal/address/address",
+    "pages/personal/address/addressFill/addressFill",
+    "pages/classfiy/goodsDetail/goodsDetail",
+    "pages/cart/cart",
+    "pages/cart/payment/payment",
+    "pages/classfiy/classfiy",
+    "pages/logs/logs",
+    "pages/vision/vision",
+    "pages/personal/personal",
+    "pages/classfiy/goodsList/goodsList",
+    "pages/personal/more/more",
+    "pages/personal/more/about/about",
+    "pages/personal/more/contact/contact",
+    "pages/personal/more/other/other",
+    "pages/personal/level/level",
+    "pages/personal/assets/assets",
+    "pages/personal/assets/about_assets/about_assets",
+    "pages/personal/coupons/coupons",
+    "pages/personal/coupons/notice/notice",
+    "pages/personal/order/order",
+    "pages/personal/delivery/delivery",
+    "pages/personal/payment/payment",
+    "pages/personal/collection/collection",
+    "pages/personal/history/history"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "汇妙",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "resources/indexPageNo.png",
+      "selectedIconPath": "resources/indexPage.png"
+    }, {
+      "pagePath": "pages/classfiy/classfiy",
+      "text": "分类",
+      "iconPath": "resources/classfiyPageNo.png",
+      "selectedIconPath": "resources/classfiyPage.png"
+    }, {
+      "pagePath": "pages/vision/vision",
+      "text": "视野",
+      "iconPath": "resources/visonPageNo.png",
+      "selectedIconPath": "resources/visonPageNo.png"
+    }, {
+      "pagePath": "pages/cart/cart",
+      "text": "购物车",
+      "iconPath": "resources/cartPageNo.png",
+      "selectedIconPath": "resources/cartPage.png"
+    }, {
+      "pagePath": "pages/personal/personal",
+      "text": "个人中心",
+      "iconPath": "resources/personalPageNo.png",
+      "selectedIconPath": "resources/personalPage.png"
+    }],
+    "color": "#8f9295",
+    "selectedColor": "#f9f027",
+    "backgroundColor": "rgba(0,0,0,0.1)",
+    "borderStyle": "white"
+  }
+}

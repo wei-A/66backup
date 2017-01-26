@@ -1,0 +1,16 @@
+<!--pages/personal/history/history.wxml-->
+<view class="clear-history">
+    <view>清除痕迹</view>
+</view>
+<view wx:key="historyDay" wx:for="{{historyDay}}">
+    <view class="history-day">{{item.historyDay}}</view>
+    <view wx:key="history" wx:for="{{item.history}}" class="history clearfix">
+        <view class="history-image">
+            <image src="{{item.historySrc}}"></image>
+        </view>
+        <view class="history-details">
+            <view class="history-name">{{item.historyName}}</view>
+            <view class="history-value">{{item.historyValue}}</view>
+        </view>
+    </view>
+</view>

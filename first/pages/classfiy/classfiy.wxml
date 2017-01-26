@@ -1,0 +1,6 @@
+<view>
+    <view class = "classfiyBox" bindtap="goList" wx:for = "{{classData.goodsClassData}}">
+        <image src="{{item.src1}}"></image>
+        <text>{{item.text}}</text>
+    </view>
+</view>

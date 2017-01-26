@@ -1,0 +1,11 @@
+<!--pages/personal/collection/collection.wxml-->
+<view class="collection clearfix" wx:for="{{collection}}">
+    <view class="collection-image">
+        <image src="{{item.collectionSrc}}"></image>
+    </view>
+    <view class="collection-details">
+        <view class="collection-name">{{item.collectionName}}</view>
+        <view class="collection-value">{{item.collectionValue}}</view>
+    </view>
+</view>
+<view class="no-more">没有更多了</view>

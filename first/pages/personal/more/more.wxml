@@ -1,0 +1,7 @@
+<!--pages/personal/more/more.wxml-->
+<image class="logo" src="../../../resources/logo.png"></image>
+<text class="name">妙汇商店</text>
+<view>应用初始化</view>
+<view bindtap="bindAboutTap">关于妙汇</view>
+<view bindtap="bindContactTap">品牌故事、联系方式</view>
+<view bindtap="bindOtherTap">服务条款、隐私保护与免责声明</view>

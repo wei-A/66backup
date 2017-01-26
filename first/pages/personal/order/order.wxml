@@ -1,0 +1,38 @@
+<!--pages/personal/order/order.wxml-->
+<view class="nav clearfix">
+    <view bindtap="bindPaymentTap">待付款</view>
+    <view bindtap="bindDeliveryTap">待收货</view>
+    <view class="nav-color">全部</view>
+</view>
+<view class="order" wx:for="{{commodityList}}" wx:key="commodityList">
+    <view class="order-num-time clearfix">
+        <text class="order-num">{{item.orderNum}}</text>
+        <text class="order-time">{{item.orderTime}}</text>
+    </view>
+    <view class="order-details clearfix">
+        <view class="order-image">
+            <image src="{{item.orderSrc}}"></image>
+        </view>
+        <view class="order-details-box">
+            <view class="order-name">{{item.orderName}}</view>
+            <view class="order-amount-value">
+                <text class="order-amount">{{item.orderAmount}}</text>
+                <text class="order-value-text">价格：</text>
+                <text class="order-value">{{item.orderValue}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="total-Price clearfix">
+        <view>
+            <text>总价：</text>
+            <text class="total-price">{{item.totalPrice}}</text>
+        </view>
+    </view> 
+    <view class="order-tap clearfix">
+        <view>
+            <text>去付款</text>
+            <text>取消订单</text>
+        </view>
+    </view> 
+</view>
+<view class="no-more">没有更多啦</view>

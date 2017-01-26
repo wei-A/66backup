@@ -1,0 +1,44 @@
+<view>
+    <view class = "detailBox">
+        <image src = "{{goodsData.src}}"  class = "goodsDetail"></image>
+        <image src="../../../resources/heartGet.png"  wx:if="{{goodsData.heart}}" data-id = "{{goodsData.id}}" class = "heartIcon" catchtap = "getHeart"></image>  
+        <image src="../../../resources/heart.png"  wx:else data-id = "{{goodsData.id}}" class = "heartIcon" catchtap = "getHeart"></image>  
+        <image src="../../../resources/cartPageNo.png" class = "cartIcon" catchtap = "goCart"></image>  
+        <image src="../../../resources/home.png" class = "homeIcon" catchtap = "goIndex"></image>  
+        <contact-button type="default-dark" size="20" session-from="weapp"></contact-button>       
+    </view>
+    <text class="goodsName">{{goodsData.name}}</text>
+    <text class="goodsPrice">{{goodsData.price}}</text>
+    <text class = "goodsIntro">{{goodsData.descript}}</text>
+    <view class="bottomNav">
+        <view>给个评论</view>
+        <view>查看详情</view>
+        <view catchtap = "confirm">立即购买</view>
+        <view>加入购物车</view>
+    </view>
+    <view class = "buyMeng" wx:if="{{goodsChoose}}" catchtap = "mengHide">
+        <view class = "chooseBox" catchtap = "kong">
+            <view class = "infor">
+                <view class = "inforChild">
+                    <image src="../../../resources/flow.jpg"></image>
+                    <view class = "intro">
+                        <text>利智loz积木</text>
+                        <text>￥{{price}}</text>
+                    </view>
+                </view>
+                <view class = "inforChildSec">当前选择：机械战士（蓝白色）</view>
+                <view class = "inforChildThird">
+                    <text>购买数量</text>
+                    <image src="../../../resources/minus.png" catchtap = "minus"></image>
+                    <text class = "count">{{count}}</text>
+                    <image src="../../../resources/plus.png" catchtap = "plus"></image>
+                </view>
+                <view class = "inforChildFor">
+                    <text>商品总价：</text>
+                    <text class="total">￥{{price*count}}</text>
+                </view>
+            </view>
+            <button catchtap = "confirm">确认</button>
+        </view>  
+    </view>
+</view>

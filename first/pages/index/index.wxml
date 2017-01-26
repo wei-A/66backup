@@ -1,0 +1,24 @@
+<swiper indicatorDots autoplay  >
+  <block wx:for="{{appData.tabData}}">
+    <swiper-item>
+      <image src="{{item.src}}" class="slide-image"  data-id = "{{item.id}}" catchtap="goodsDetailTapB"/>
+    </swiper-item>
+  </block>
+</swiper>
+<scroll-view class="recommend_scroll_x_box" scroll-x="true">
+  <view class="recommend_hot_box" wx:for="{{appData.goodsClassData}}">
+    <view data-id = "{{item.data}}" bindtap="scrollClassfiyTap">
+      <image src="{{item.src}}" class="recommend_hot_image"></image>
+      <text class="recommend_hot_text">{{item.text}}</text>
+    </view>
+  </view>
+</scroll-view>
+<view wx:for="{{appData.goodsListData}}">
+  <view class = "listBox" data-id = "{{item.id}}">
+      <image src="{{item.src}}" class="goodsBigImg" bindtap="goodsDetailTap" data-id = "{{item.id}}"></image>
+      <image src="../../resources/heartGet.png" data-id = "{{item.id}}" class = "heartIcon" catchtap = "getHeart" wx:if="{{item.heart}}" catchtap="getHeart"></image> 
+      <image src="../../resources/heart.png" data-id = "{{item.id}}" class = "heartIcon" catchtap = "getHeart" wx:else catchtap="getHeart"></image>   
+  </view>
+  <text class="goodsName">{{item.name}}</text>
+  <text class="goodsPrice">{{item.price}}</text>
+</view>

@@ -1,0 +1,52 @@
+<view class = "outer">
+    <view class = "wrap">
+        <view class = "border"></view>
+        <view class = "topic">收件人信息</view>
+        <view class = "personInfor">
+            <view class = "personInforFir">
+                <text class = "name">吴</text>
+                <text class = "number">13660165389</text>
+            </view>
+            <view class = "personInforSec"></view>
+            <view class = "personInforThird">
+                <view class = "adress">广州市天河区珠江新城</view>
+                <image src="../../../resources/right.png"></image>
+            </view>
+        </view>
+        <view class = "border"></view>
+    </view>
+    <view class = "goodLists">
+            <view class = "goodList">
+                <image src="../../../resources/flow.jpg"></image>
+                <view>
+                    <text>海尔空气净化器</text>
+                    <text>299</text>
+                </view>
+            </view>
+            <view class = "goodList">
+                <image src="../../../resources/flow.jpg"></image>
+                <view>
+                    <text>海尔空气净化器</text>
+                    <text>299</text>
+                </view>
+            </view>
+    </view>
+    <view class = "favourable">
+        <view>优惠</view>
+        <view class = "ticket">
+            <text>满减优惠券</text>
+            <image src="../../../resources/right.png"></image>
+            <text>添加优惠券</text>
+        </view>
+        <view>
+            <text>可使用妙钻抵</text>
+            <switch type="switch" />
+        </view>
+    </view>
+    <view class = "message">
+        <view>留言备注</view>
+        <textarea  />
+    </view>
+</view>
+    <button>微信安全支付</button>
+

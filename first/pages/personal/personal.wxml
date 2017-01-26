@@ -1,0 +1,58 @@
+<!--pages/personal/personal.wxml-->
+<view class="user-information">
+    <contact-button class="user-contact" type="default-light" size="20" session-from="weapp"></contact-button>
+    <image class="user-set" bindtap="bindMoreTap" src="{{userSetImage}}"></image>
+    <view class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <view class="user-name-lev">
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            <text bindtap="bindLevelTap" class="user-level">{{userLevel}}</text>
+        </view>
+        <view class="user-total-assets">
+            <text bindtap="bindAssetsTap" class="user-assets">{{userAssets}}</text>
+            <text bindtap="bindCouponsTap" class="user-coupons">{{userCoupons}}</text>
+        </view>
+    </view>
+</view>
+<view bindtap="bindOrderTap" class="user-order clearfix">
+    <text class="user-order-text">全部订单</text>
+    <image class="right-arrow" src="../../resources/right_arrow.png"></image>
+    <text class="user-check-order">查看全部订单</text>
+</view>
+<view class="user-all-goods clearfix">
+    <view bindtap="bindPaymentTap" class="user-payment">
+        <text class="num">{{userPayment}}</text>
+        <image class="user-payment-icon" src="../../resources/pay.png"></image>
+        <text class="user-payment-text">待付款</text>
+    </view>
+    <view bindtap="bindDeliveryTap" class="user-goods">
+        <text class="num">{{userGoods}}</text>
+        <image class="user-goods-icon" src="../../resources/goods_car.png"></image>
+        <text class="user-goods-text">待收货</text>
+    </view>
+    <view bindtap="bindCollectionTap" class="user-collection">
+        <text class="num">{{userCollection}}</text>
+        <image class="user-collection-icon" src="../../resources/collection.png"></image>
+        <text class="user-collection-text">心愿单</text>
+    </view>
+</view>
+<view bindtap="bindCouponsTap" class="user-all-coupons clearfix">
+    <image class="user-all-coupons-icon" src="../../resources/user-all-coupons.png"></image>
+    <text class="user-all-coupons-text">优惠券</text>
+    <image class="right-arrow" src="../../resources/right_arrow.png"></image>
+</view>
+<view bindtap="bindAddressTap" class="shipping-address clearfix">
+    <image class="shipping-address-icon" src="../../resources/shipping-address.png"></image>
+    <text class="shipping-address-text">收货地址</text>
+    <image class="right-arrow" src="../../resources/right_arrow.png"></image>
+</view>
+<view bindtap="bindHistoryTap" class="footprint clearfix">
+    <image class="footprint-icon" src="../../resources/footprint.png"></image>
+    <text class="footprint-text">足迹</text>
+    <image class="right-arrow" src="../../resources/right_arrow.png"></image>
+</view>
+<view  bindtap="bindcallingTap" class="customer-service clearfix">
+    <image class="customer-service-icon" src="../../resources/customer-service.png"></image>
+    <text class="customer-service-text">拨打客服热线：400-6005423</text>
+    <image class="right-arrow" src="../../resources/right_arrow.png"></image>
+</view>

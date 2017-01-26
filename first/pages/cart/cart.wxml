@@ -1,0 +1,27 @@
+<view class = "goodsTips">
+    <view class = "chooseWrap">
+        <view class = "chooseInner"></view>
+    </view>
+    <view class = "goodsList">
+        <image src="../../resources/flow.jpg"></image>
+        <view class = "words">
+            <view>海尔空气净化器</view>
+            <view class = "wordsChildSec">￥299</view>
+            <view class = "wordsChildThird">
+                <image src="../../resources/minus.png" catchtap = "minus"></image>
+                <text>{{count}}</text>
+                <image src="../../resources/plus.png" catchtap = "plus"></image>
+            </view>
+        </view>
+    </view>
+    <image src="../../resources/del.png" class = "del"></image>
+</view>
+<view class = "bottom">
+    <view class = "chooseWrap">
+        <view class = "chooseInner"></view>
+    </view>
+    <text>全选</text>
+    <text class = "total">总计：</text>
+    <button catchtap = "goPayment">去结算：</button>
+</view>
+

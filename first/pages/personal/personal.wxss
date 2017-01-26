@@ -1,0 +1,143 @@
+/* pages/personal/personal.wxss */
+.clearfix{zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+page{
+    background-color: #f2efef;
+}
+.user-information{
+    background-color: orange;
+    padding-bottom: 10rpx;
+}
+.user-contact{
+    float: left;
+    margin-left: 20rpx;
+}
+.user-set{
+    float: right;
+    margin-right: 20rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+.userinfo{
+    padding-top: 10rpx;
+}
+.userinfo-avatar{
+    display: block;
+    margin: 0 auto;
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+}
+.user-name-lev{
+    margin-top: 10rpx;
+    text-align: center;
+}
+.user-level{
+    margin-left: 20rpx;
+    padding: 7rpx 20rpx;
+    border-radius: 10rpx;
+    font-size: 30rpx;
+    color: #e2c89c;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.user-total-assets{
+    margin-top: 10rpx;
+    text-align: center;
+}
+.user-assets,.user-coupons{
+    padding: 7rpx 15rpx;
+    background-color: #f3e8d5;
+    border-radius: 10rpx;
+    font-size: 30rpx;
+    color: #a98951;
+}
+.user-assets{
+    margin-right: 10rpx;
+}
+.user-order{
+    background-color: #fff;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.user-order-text{
+    float: left;
+    margin-left: 10rpx;
+    font-size: 25rpx;
+    color: #333;
+}
+.user-check-order{
+    float: right;
+    margin-right: 10rpx;
+    width: 130rpx;
+    font-size: 20rpx;
+    line-height: 35rpx;
+    color: #999;
+}
+.user-order .right-arrow{
+    float: right;
+    margin-top: 7rpx;
+    margin-right: 15rpx;
+    width: 20rpx;
+    height: 20rpx;
+}
+.user-all-goods{
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    padding: 5rpx 0;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.user-payment,.user-goods,.user-collection{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+.user-goods{
+    margin: 0 auto;
+}
+.user-collection{
+    float: right;
+}
+.num{
+    display: block;
+    font-size: 35rpx;
+    font-weight: 600;
+    color: orange;
+}
+.user-payment-text,.user-goods-text,.user-collection-text{
+    font-size: 25rpx;
+    color: #666;
+}
+.user-payment-icon,.user-goods-icon,.user-collection-icon{
+    margin-right: 10rpx;
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: middle;
+}
+.user-payment-icon{
+    width: 25rpx;
+    height: 25rpx;
+}
+.user-all-coupons,.shipping-address,.footprint,.customer-service{
+    background-color: #fff;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.user-all-coupons-text,.shipping-address-text,.footprint-text,.customer-service-text{
+    margin-left: 5rpx;
+    font-size: 25rpx;
+    color: #666;
+}
+.user-all-coupons-icon,.shipping-address-icon,.footprint-icon,.customer-service-icon{
+    margin-left: 10rpx;
+    width:30rpx;
+    height:30rpx;
+    vertical-align:middle;
+
+}
+.user-all-coupons .right-arrow,.shipping-address .right-arrow,.footprint .right-arrow,.customer-service .right-arrow{
+    float: right;
+    margin-top: 15rpx;
+    margin-right: 10rpx;
+    width: 20rpx;
+    height: 20rpx;
+}
